@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <div class="imagen">
+    <div class="image">
       <img class="preview" :src="image" alt="poster" />
-      <button class="btnView">
+      <button class="btn_view">
         <router-link :to="{ name: 'detail', params: { Film: this.Film } }"
           >View film</router-link
         >
@@ -81,7 +81,7 @@ export default {
   border: 2px solid white;
   display: flex;
 
-  .imagen {
+  .image {
     display: inline-block;
     position: relative;
 
@@ -94,12 +94,12 @@ export default {
         opacity: 0.5;
       }
     }
-    .btnView {
+    .btn_view {
       position: absolute;
       top: 50%;
       margin-left: -155px;
       padding: 10px 20px;
-      background-color: rgba(white, 0.2);
+      background-color: rgba(white, 0.5);
       border-radius: 60px;
       border: none;
 

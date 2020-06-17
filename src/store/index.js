@@ -17,7 +17,7 @@ export default new Vuex.Store({
   },
   actions: {
     fetchFilms(context) {
-      axios.get('http://927a45b2f7fb.ngrok.io/api/films/').then(result => {
+      axios.get('https://swapi.dev/api/films/').then(result => {
         context.commit('getFilms', result.data.results);
       }).catch(error => {
         throw new Error(`API ${error}`);
